@@ -1,4 +1,24 @@
 <!DOCTYPE html>
+<!--
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you will have a short biography section of yourself, the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+ASSIGNMENT RULES
+- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
+- To test the page, open it with your browser and inspect it with developer tools / device emulator.
+- Use Bootstrap4.6 classes to create the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+NOTE:
+Even the most experienced designers need inspiration.
+Spend some time surfing the web researching the best way of representing the albums you love.
+Could be the Amazon way, the Spotify or Apple music way or any other music collection out there.
+
+HINT: Manage your time in order to finish the structure and responsiveness before focusing on the details.
+-->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -19,8 +39,191 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
+      <a class="navbar-brand text-white" href="#">Kenneth's Album</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul
+          class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+          style="max-height: 100px"
+        >
+          <li class="nav-item active">
+            <a class="nav-link text-white text-white" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#">Bio</a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link text-white">Album</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control mr-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline- text-white" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container-xl">
+      <div class="row p-sm-5 p-3 mb-2 bg-secondary text-white">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <img src="./my profile photo.jpg" class="img-fluid" alt="" />
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-6 align-self-end font-weight-normal"
+        >
+          <p class="bio mt-3 lead">
+            My name is <strong>OBI KENNETH</strong> <br />
+            I am a First year Bachelor in Informatics System with experience in
+            Sales Administration with over 3 years of experience. Assisting
+            sales teams with identifying customer needs and creating customized
+            solutions. Excellent verbal and written communication skills to
+            document sales activities. In addition, Am currently learning
+            soffware development to further improve my coding skills, and in my
+            toolbox, i already learnt <span class="font-italic">HTML</span>,
+            <span class="font-italic">CSS</span>,
+            <span class="font-italic">JAVASCRIPT</span>, and
+            <span class="font-italic">BOOTSTRAP</span>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="container">
+      <h1
+        class="text-capitalize mt-3 font-italic text-sm-center text-md-center"
+      >
+        My top ten best albums:
+      </h1>
+      <div class="row p-sm-5 p-3 mb-0 bg-secondary text-white">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./wizkid.jpg"
+            class="img-fluid w-100 img-thumbnail img-thumbnail"
+            alt="wizkid MIL album cover"
+          />
+          <p class="mb-0">No. 1</p>
+          <p class="mb-0">Wizkid</p>
+          <p class="mb-0">Made in lagos (2020)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./burna boy.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="burnaboy twice as tall album cover"
+          />
+          <p class="mb-0">No. 2</p>
+          <p class="mb-0">Burna Boy</p>
+          <p class="mb-0">Twice as tall (2020)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./davido.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="a better time davido album cover"
+          />
+          <p class="mb-0">No. 3</p>
+          <p class="mb-0">Davido</p>
+          <p class="mb-0">A better time (2020)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./Olamide-–-UY-Scuti-Album.png"
+            class="img-fluid w-100 img-thumbnail"
+            alt="UY-Scuti-Album cover"
+          />
+          <p class="mb-0">No. 4</p>
+          <p class="mb-0">Olamide</p>
+          <p class="mb-0">UY-Scuti (2021)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./chike.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="boo of the booless album cover"
+          />
+          <p class="mb-0">No. 5</p>
+          <p class="mb-0">Chike</p>
+          <p class="mb-0">Boo of the booless (2020)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./wiz superstar.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="wizkid superstar album cover"
+          />
+          <p class="mb-0">No. 6</p>
+          <p class="mb-0">Wizkid</p>
+          <p class="mb-0">Superstar (2011)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./ayra starr.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="atra starr album cover"
+          />
+          <p class="mb-0">No. 7</p>
+          <p class="mb-0">Ayra Starr</p>
+          <p class="mb-0">19 & Dangerous (2021)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./olamide.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="carpe diem album cover"
+          />
+          <p class="mb-0">No. 8</p>
+          <p class="mb-0">Olamide</p>
+          <p class="mb-0">Carpe Diem (2020)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./kizz daniel.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="Barnabas album cover"
+          />
+          <p class="mb-0">No. 9</p>
+          <p class="mb-0">Kizz Daniel</p>
+          <p class="mb-0">Barnabas (2021)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./Joeboy-Somewhere-Between-Beauty-Magic-Sbbm-Album-artwork.jpg"
+            class="img-fluid w-100 img-thumbnail"
+            alt="Somewhere-Between-Beauty-Magic album cover"
+          />
+          <p class="mb-0">No. 10</p>
+          <p class="mb-0">JoeBoy</p>
+          <p class="mb-0">Somewhere Between Beauty Magic(2021)</p>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid bg-dark p-3">
+      <div class="container text-white">
+        <p class="text-center">
+          copyright &copy; kenneth obi | obikenneth913@gmail.com | universiteto
+          g. 8
+        </p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
