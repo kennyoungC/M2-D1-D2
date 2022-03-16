@@ -12,6 +12,7 @@ ASSIGNMENT RULES
 - Use Bootstrap4.6 classes to create the page.
 - Use containers, rows and cols in order to achieve a great responsive layout.
 
+
 NOTE:
 Even the most experienced designers need inspiration.
 Spend some time surfing the web researching the best way of representing the albums you love.
@@ -35,12 +36,34 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <style>
+      body {
+        background-color: azure;
+      }
+      img:hover {
+        transform: scale(1.05);
+      }
+      .list-group-item {
+        font-size: 20px;
+      }
+      span {
+        color: #aaa;
+      }
+      a {
+        transition: all 0.5s;
+      }
+      a:hover {
+        text-decoration: underline !important;
+      }
+    </style>
 
-    <title>Hello, world!</title>
+    <title>Top 10 Album</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
-      <a class="navbar-brand text-white" href="#">Kenneth's Album</a>
+      <a class="navbar-brand text-white" href="#"
+        >KEN<span>music</span> EM<span>pire</span></a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -63,11 +86,14 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             >
           </li>
           <li class="nav-item text-white">
-            <a class="nav-link text-white" href="#">Bio</a>
+            <a class="nav-link text-white" href="#bio">Bio</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-white">Album</a>
+            <a class="nav-link text-white" href="#top-10">Top 10</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#album-review">Album Review</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -83,10 +109,14 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         </form>
       </div>
     </nav>
-    <div class="container-xl">
+    <div class="container-xl" id="bio">
       <div class="row p-sm-5 p-3 mb-2 bg-secondary text-white">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-          <img src="./my profile photo.jpg" class="img-fluid" alt="" />
+          <img
+            src="./my profile photo.jpg"
+            class="img-fluid img-thumbnail"
+            alt=""
+          />
         </div>
         <div
           class="col-12 col-sm-12 col-md-12 col-lg-6 align-self-end font-weight-normal"
@@ -107,14 +137,16 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         </div>
       </div>
     </div>
-    <section class="container">
+    <section class="container" id="top-10">
+      <hr />
       <h1
         class="text-capitalize mt-3 font-italic text-sm-center text-md-center"
       >
         My top ten best albums:
       </h1>
+      <hr />
       <div class="row p-sm-5 p-3 mb-0 bg-secondary text-white">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./wizkid.jpg"
             class="img-fluid w-100 img-thumbnail img-thumbnail"
@@ -124,7 +156,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Wizkid</p>
           <p class="mb-0">Made in lagos (2020)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./burna boy.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -134,7 +166,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Burna Boy</p>
           <p class="mb-0">Twice as tall (2020)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./davido.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -144,7 +176,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Davido</p>
           <p class="mb-0">A better time (2020)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./Olamide-–-UY-Scuti-Album.png"
             class="img-fluid w-100 img-thumbnail"
@@ -154,7 +186,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Olamide</p>
           <p class="mb-0">UY-Scuti (2021)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./chike.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -164,7 +196,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Chike</p>
           <p class="mb-0">Boo of the booless (2020)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./wiz superstar.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -174,7 +206,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Wizkid</p>
           <p class="mb-0">Superstar (2011)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./ayra starr.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -184,7 +216,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Ayra Starr</p>
           <p class="mb-0">19 & Dangerous (2021)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./olamide.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -194,7 +226,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Olamide</p>
           <p class="mb-0">Carpe Diem (2020)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./kizz daniel.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -204,7 +236,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <p class="mb-0">Kizz Daniel</p>
           <p class="mb-0">Barnabas (2021)</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
           <img
             src="./Joeboy-Somewhere-Between-Beauty-Magic-Sbbm-Album-artwork.jpg"
             class="img-fluid w-100 img-thumbnail"
@@ -216,8 +248,310 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         </div>
       </div>
     </section>
+    <section class="container review" id="album-review">
+      <hr />
+      <h2
+        class="text-capitalize mt-3 font-italic text-sm-center text-md-center"
+      >
+        Album Review
+      </h2>
+      <hr />
+      <div class="row p-sm-5 p-3">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./kizz daniel.jpg"
+            class="card-img-top"
+            alt="kizz daniel album cover"
+          />
+          <div class="card-body">
+            <h5 class="card-title">KIZZ DANIEL</h5>
+            <p class="card-text">Album &middot; 2021</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Pour Me Water <br />
+              <span> Kizz Daniel</span>
+            </li>
+            <li class="list-group-item">
+              Addict <br />
+              <span> Kizz Daniel</span>
+            </li>
+            <li class="list-group-item">
+              Eh God (Barnabas) <br />
+              <span> Kizz Daniel</span>
+            </li>
+            <li class="list-group-item">
+              Oshe (feat. The Cavemen.)<br />
+              <span> Kizz Daniel</span>, The Cavemen.
+            </li>
+            <li class="list-group-item">
+              Burn <br />
+              <span> Kizz Daniel</span>
+            </li>
+            <li class="list-group-item">
+              Lie <br />
+              <span> Kizz Daniel</span>
+            </li>
+            <li class="list-group-item">
+              Skin <br />
+              <span> Kizz Daniel, Kelvyn Colt</span>
+            </li>
+          </ul>
+          <div class="card-body">
+            <a
+              href="https://open.spotify.com/album/0uk18xBtNopYpvMT1t7BCU?autoplay=true"
+              class="card-link"
+              target="_blank"
+              >Listen Now</a
+            >
+            <!-- <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./ayra starr.jpg"
+            class="card-img-top"
+            alt="Ayra starr album cover"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ayra Starr</h5>
+            <p class="card-text">Album &middot; 2021</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Fashion Killer <br />
+              <span>Ayra starr</span>
+            </li>
+            <li class="list-group-item">
+              Lonely <br />
+              <span>Ayra starr</span>
+            </li>
+            <li class="list-group-item">
+              Snitch <br />
+              <span>Ayra starr, Foushee</span>
+            </li>
+            <li class="list-group-item">
+              In Between<br />
+              <span> Ayra starr, The Cavemen.</span>
+            </li>
+            <li class="list-group-item">
+              Beggie Beggie <br />
+              <span>Ayra starr, CKay</span>
+            </li>
+            <li class="list-group-item">
+              Karma <br />
+              <span>Ayra starr</span>
+            </li>
+            <li class="list-group-item">
+              Bloody Samaritan <br />
+              <span> Ayra starr</span>
+            </li>
+            <li class="list-group-item">
+              Bridgertn <br />
+              <span>Ayra starr</span>
+            </li>
+            <li class="list-group-item">
+              Amin <br />
+              <span>Ayra starr</span>
+            </li>
+          </ul>
+          <div class="card-body">
+            <a
+              href="https://open.spotify.com/album/0AjdvP8p42lwSzmN0PpwJv?autoplay=true"
+              class="card-link"
+              target="_blank"
+              >Listen Now</a
+            >
+            <!-- <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+          <img
+            src="./olamide.jpg"
+            class="card-img-top"
+            alt="Ayra starr album cover"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Olamide</h5>
+            <p class="card-text">Album &middot; 2020</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Another Level <br />
+              <span> Olamide</span>
+            </li>
+            <li class="list-group-item">
+              Green Light <br />
+              <span>Olamide</span>
+            </li>
+            <li class="list-group-item">
+              Infinity (feat. Omay Lay) <br />
+              <span>Olamide, Omay Lay</span>
+            </li>
+            <li class="list-group-item">
+              Eru<br />
+              <span>Olamide</span>
+            </li>
+            <li class="list-group-item">
+              Triumphant (feat. Bella Shmurda) <br />
+              <span>Olamide, Bella Shmurda</span>
+            </li>
+            <li class="list-group-item">
+              At Your Service <br />
+              <span>Olamide</span>
+            </li>
+            <li class="list-group-item">
+              Do Better <br />
+              <span>Olamide</span>
+            </li>
+            <li class="list-group-item">
+              Chimichanga <br />
+              <span>Olamide</span>
+            </li>
+            <li class="list-group-item">
+              Shilalo (feat. Phyno) <br />
+              <span> Olamide, Phyno</span>
+            </li>
+            <li class="list-group-item">
+              Loading (feat. Bad Boy Timz) <br />
+              <span> Olamide, Bad Boy Tim</span>z
+            </li>
+            <li class="list-group-item">
+              Unconditionality (feat. Peruzzi) <br />
+              <span>Olamide, Peruzzi</span>
+            </li>
+            <li class="list-group-item">
+              Plenty (feat. Fireboy DML) <br />
+              <span>Olamide, Fireboy DML</span>
+            </li>
+          </ul>
+          <div class="card-body">
+            <a
+              href="https://open.spotify.com/album/6fG2eFCgUmytQWL6umtsCh?autoplay=true"
+              class="card-link"
+              target="_blank"
+              >Listen Now</a
+            >
+            <!-- <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+    <section class="container" id="top-10">
+      <h1
+        class="text-capitalize mt-3 font-italic text-sm-center text-md-center"
+      >
+        my top 10 worst album
+      </h1>
+      <hr />
+      <div class="row p-sm-5 p-3 mb-0 bg-secondary text-white">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./sean paul.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="sean paul album cover"
+          />
+          <p class="mb-0">No. 1</p>
+          <p class="mb-0">Sean Paul</p>
+          <p class="mb-0">Imperial Blaze (2009)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./marey carey.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="Mariah Carey album cover"
+          />
+          <p class="mb-0">No. 2</p>
+          <p class="mb-0">Mariah Carey</p>
+          <p class="mb-0">Charmbracelet (2002)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./ashlee simpson.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="I Am Me cover"
+          />
+          <p class="mb-0">No. 3</p>
+          <p class="mb-0">Ashlee Simpson</p>
+          <p class="mb-0">I Am Me (2005)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./Lenny Kravitz.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="Baptism Album cover"
+          />
+          <p class="mb-0">No. 4</p>
+          <p class="mb-0">Lenny Kravitz</p>
+          <p class="mb-0">Baptism (2004)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./Kreayshawn.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="Somethin' 'Bout Kreay album cover"
+          />
+          <p class="mb-0">No. 5</p>
+          <p class="mb-0">Kreayshawn</p>
+          <p class="mb-0">Somethin' 'Bout Kreay (2005)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./Black Flag.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="What The... album cover"
+          />
+          <p class="mb-0">No. 6</p>
+          <p class="mb-0">Black Flag</p>
+          <p class="mb-0">What The... (2007)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./Chingy.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="Hoodstar album cover"
+          />
+          <p class="mb-0">No. 7</p>
+          <p class="mb-0">Chingy</p>
+          <p class="mb-0">Hoodstar (2009)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./Megadeth.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="Super Collider album cover"
+          />
+          <p class="mb-0">No. 8</p>
+          <p class="mb-0">Megadeth</p>
+          <p class="mb-0">Super Collider (2001)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./Nickelback.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="All The Right Reasons album cover"
+          />
+          <p class="mb-0">No. 9</p>
+          <p class="mb-0">Nickelback</p>
+          <p class="mb-0">All The Right Reasons (2003)</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 album">
+          <img
+            src="./Enya.webp"
+            class="img-fluid w-100 img-thumbnail"
+            alt="A Day Without Rain album cover"
+          />
+          <p class="mb-0">No. 10</p>
+          <p class="mb-0">Enya</p>
+          <p class="mb-0">A Day Without Rain (2008)</p>
+        </div>
+      </div>
+    </section>
     <footer class="container-fluid bg-dark p-3">
       <div class="container text-white">
+        <p class="total">TOTAL IMAGES:</p>
+        <p class="total-alb">TOTAL ALBUM:</p>
         <p class="text-center">
           copyright &copy; kenneth obi | obikenneth913@gmail.com | universiteto
           g. 8
@@ -234,5 +568,26 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // window.onload = function () {
+      //   const total = document.querySelector(`total`);
+      //   const allImg = document.querySelectorAll(`img`);
+      //   allImg.forEach(
+      //     (img, i) => (total.textContent = `TOTAL IMAGES: ${i + 1}`)
+      //   );
+      // };
+      const total = document.querySelector(`.total`);
+      const totalAlb = document.querySelector(`.total-alb`);
+      const allImg = document.querySelectorAll(`img`);
+      const allAlbum = document.querySelectorAll(`.album`);
+      window.addEventListener("load", function () {
+        allImg.forEach(
+          (img, i) => (total.textContent = `TOTAL IMAGES: ${i + 1}`)
+        );
+        allAlbum.forEach(
+          (img, i) => (totalAlb.textContent = `TOTAL ALBUM: ${i + 1}`)
+        );
+      });
+    </script>
   </body>
 </html>
