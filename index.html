@@ -55,12 +55,18 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       a:hover {
         text-decoration: underline !important;
       }
+      .navbar {
+        opacity: 50;
+      }
+      section {
+        min-height: 93vh;
+      }
     </style>
 
     <title>Top 10 Album</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3 sticky-top">
       <a class="navbar-brand text-white" href="#"
         >KEN<span>music</span> EM<span>pire</span></a
       >
@@ -123,13 +129,17 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         >
           <p class="bio mt-3 lead">
             My name is <strong>OBI KENNETH</strong> <br />
-            I am a First year Bachelor in Informatics System with experience in
-            Sales Administration with over 3 years of experience. Assisting
-            sales teams with identifying customer needs and creating customized
-            solutions. Excellent verbal and written communication skills to
-            document sales activities. In addition, Am currently learning
-            soffware development to further improve my coding skills, and in my
-            toolbox, i already learnt <span class="font-italic">HTML</span>,
+
+            I am creative, hardworking and detail-oriented with excellent verbal
+            and good communication skill. I'm in my first year studying
+            informatics system. I chose that field of study because I’ve always
+            been interested in technology. I have previously worked as a sales
+            Administrator where I maintain and update sales and customer
+            records. Develop monthly sales reports Communicate important
+            feedback from customers internally and ensures timely deliveries. Am
+            currently learning soffware development to further improve my
+            programming skills. This far, I have learnt and already coding with
+            <span class="font-italic">HTML</span>,
             <span class="font-italic">CSS</span>,
             <span class="font-italic">JAVASCRIPT</span>, and
             <span class="font-italic">BOOTSTRAP</span>.
@@ -262,41 +272,46 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             src="./kizz daniel.jpg"
             class="card-img-top"
             alt="kizz daniel album cover"
+            data-toggle="collapse"
+            data-target="#kizzdaniel"
           />
-          <div class="card-body">
-            <h5 class="card-title">KIZZ DANIEL</h5>
-            <p class="card-text">Album &middot; 2021</p>
+          <div class="collapse show" id="kizzdaniel">
+            <div class="card-body">
+              <h5 class="card-title">KIZZ DANIEL</h5>
+              <p class="card-text">Album &middot; 2021</p>
+            </div>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Pour Me Water <br />
+                <span> Kizz Daniel</span>
+              </li>
+              <li class="list-group-item">
+                Addict <br />
+                <span> Kizz Daniel</span>
+              </li>
+              <li class="list-group-item">
+                Eh God (Barnabas) <br />
+                <span> Kizz Daniel</span>
+              </li>
+              <li class="list-group-item">
+                Oshe (feat. The Cavemen.)<br />
+                <span> Kizz Daniel, The Cavemen.</span>
+              </li>
+              <li class="list-group-item">
+                Burn <br />
+                <span> Kizz Daniel</span>
+              </li>
+              <li class="list-group-item">
+                Lie <br />
+                <span> Kizz Daniel</span>
+              </li>
+              <li class="list-group-item">
+                Skin <br />
+                <span> Kizz Daniel, Kelvyn Colt</span>
+              </li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              Pour Me Water <br />
-              <span> Kizz Daniel</span>
-            </li>
-            <li class="list-group-item">
-              Addict <br />
-              <span> Kizz Daniel</span>
-            </li>
-            <li class="list-group-item">
-              Eh God (Barnabas) <br />
-              <span> Kizz Daniel</span>
-            </li>
-            <li class="list-group-item">
-              Oshe (feat. The Cavemen.)<br />
-              <span> Kizz Daniel</span>, The Cavemen.
-            </li>
-            <li class="list-group-item">
-              Burn <br />
-              <span> Kizz Daniel</span>
-            </li>
-            <li class="list-group-item">
-              Lie <br />
-              <span> Kizz Daniel</span>
-            </li>
-            <li class="list-group-item">
-              Skin <br />
-              <span> Kizz Daniel, Kelvyn Colt</span>
-            </li>
-          </ul>
           <div class="card-body">
             <a
               href="https://open.spotify.com/album/0uk18xBtNopYpvMT1t7BCU?autoplay=true"
@@ -312,49 +327,53 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             src="./ayra starr.jpg"
             class="card-img-top"
             alt="Ayra starr album cover"
+            data-toggle="collapse"
+            data-target="#ayra"
           />
-          <div class="card-body">
-            <h5 class="card-title">Ayra Starr</h5>
-            <p class="card-text">Album &middot; 2021</p>
+          <div class="collapse show" id="ayra">
+            <div class="card-body">
+              <h5 class="card-title">Ayra Starr</h5>
+              <p class="card-text">Album &middot; 2021</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Fashion Killer <br />
+                <span>Ayra starr</span>
+              </li>
+              <li class="list-group-item">
+                Lonely <br />
+                <span>Ayra starr</span>
+              </li>
+              <li class="list-group-item">
+                Snitch <br />
+                <span>Ayra starr, Foushee</span>
+              </li>
+              <li class="list-group-item">
+                In Between<br />
+                <span> Ayra starr, The Cavemen.</span>
+              </li>
+              <li class="list-group-item">
+                Beggie Beggie <br />
+                <span>Ayra starr, CKay</span>
+              </li>
+              <li class="list-group-item">
+                Karma <br />
+                <span>Ayra starr</span>
+              </li>
+              <li class="list-group-item">
+                Bloody Samaritan <br />
+                <span> Ayra starr</span>
+              </li>
+              <li class="list-group-item">
+                Bridgertn <br />
+                <span>Ayra starr</span>
+              </li>
+              <li class="list-group-item">
+                Amin <br />
+                <span>Ayra starr</span>
+              </li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              Fashion Killer <br />
-              <span>Ayra starr</span>
-            </li>
-            <li class="list-group-item">
-              Lonely <br />
-              <span>Ayra starr</span>
-            </li>
-            <li class="list-group-item">
-              Snitch <br />
-              <span>Ayra starr, Foushee</span>
-            </li>
-            <li class="list-group-item">
-              In Between<br />
-              <span> Ayra starr, The Cavemen.</span>
-            </li>
-            <li class="list-group-item">
-              Beggie Beggie <br />
-              <span>Ayra starr, CKay</span>
-            </li>
-            <li class="list-group-item">
-              Karma <br />
-              <span>Ayra starr</span>
-            </li>
-            <li class="list-group-item">
-              Bloody Samaritan <br />
-              <span> Ayra starr</span>
-            </li>
-            <li class="list-group-item">
-              Bridgertn <br />
-              <span>Ayra starr</span>
-            </li>
-            <li class="list-group-item">
-              Amin <br />
-              <span>Ayra starr</span>
-            </li>
-          </ul>
           <div class="card-body">
             <a
               href="https://open.spotify.com/album/0AjdvP8p42lwSzmN0PpwJv?autoplay=true"
@@ -369,62 +388,66 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
           <img
             src="./olamide.jpg"
             class="card-img-top"
-            alt="Ayra starr album cover"
+            alt="olamide album cover"
+            data-toggle="collapse"
+            data-target="#olamide"
           />
-          <div class="card-body">
-            <h5 class="card-title">Olamide</h5>
-            <p class="card-text">Album &middot; 2020</p>
+          <div class="collapse show" id="olamide">
+            <div class="card-body">
+              <h5 class="card-title">Olamide</h5>
+              <p class="card-text">Album &middot; 2020</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Another Level <br />
+                <span> Olamide</span>
+              </li>
+              <li class="list-group-item">
+                Green Light <br />
+                <span>Olamide</span>
+              </li>
+              <li class="list-group-item">
+                Infinity (feat. Omay Lay) <br />
+                <span>Olamide, Omay Lay</span>
+              </li>
+              <li class="list-group-item">
+                Eru<br />
+                <span>Olamide</span>
+              </li>
+              <li class="list-group-item">
+                Triumphant (feat. Bella Shmurda) <br />
+                <span>Olamide, Bella Shmurda</span>
+              </li>
+              <li class="list-group-item">
+                At Your Service <br />
+                <span>Olamide</span>
+              </li>
+              <li class="list-group-item">
+                Do Better <br />
+                <span>Olamide</span>
+              </li>
+              <li class="list-group-item">
+                Chimichanga <br />
+                <span>Olamide</span>
+              </li>
+              <li class="list-group-item">
+                Shilalo (feat. Phyno) <br />
+                <span> Olamide, Phyno</span>
+              </li>
+              <li class="list-group-item">
+                Loading (feat. Bad Boy Timz) <br />
+                <span> Olamide, Bad Boy Timz</span>
+              </li>
+              <li class="list-group-item">
+                Unconditionality (feat. Peruzzi) <br />
+                <span>Olamide, Peruzzi</span>
+              </li>
+              <li class="list-group-item">
+                Plenty (feat. Fireboy DML) <br />
+                <span>Olamide, Fireboy DML</span>
+              </li>
+            </ul>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              Another Level <br />
-              <span> Olamide</span>
-            </li>
-            <li class="list-group-item">
-              Green Light <br />
-              <span>Olamide</span>
-            </li>
-            <li class="list-group-item">
-              Infinity (feat. Omay Lay) <br />
-              <span>Olamide, Omay Lay</span>
-            </li>
-            <li class="list-group-item">
-              Eru<br />
-              <span>Olamide</span>
-            </li>
-            <li class="list-group-item">
-              Triumphant (feat. Bella Shmurda) <br />
-              <span>Olamide, Bella Shmurda</span>
-            </li>
-            <li class="list-group-item">
-              At Your Service <br />
-              <span>Olamide</span>
-            </li>
-            <li class="list-group-item">
-              Do Better <br />
-              <span>Olamide</span>
-            </li>
-            <li class="list-group-item">
-              Chimichanga <br />
-              <span>Olamide</span>
-            </li>
-            <li class="list-group-item">
-              Shilalo (feat. Phyno) <br />
-              <span> Olamide, Phyno</span>
-            </li>
-            <li class="list-group-item">
-              Loading (feat. Bad Boy Timz) <br />
-              <span> Olamide, Bad Boy Tim</span>z
-            </li>
-            <li class="list-group-item">
-              Unconditionality (feat. Peruzzi) <br />
-              <span>Olamide, Peruzzi</span>
-            </li>
-            <li class="list-group-item">
-              Plenty (feat. Fireboy DML) <br />
-              <span>Olamide, Fireboy DML</span>
-            </li>
-          </ul>
           <div class="card-body">
             <a
               href="https://open.spotify.com/album/6fG2eFCgUmytQWL6umtsCh?autoplay=true"
